@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #524747;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1:hover{opacity: calc(55%);}
+
+nav li a:hover{color: rgb(163, 100, 100);transition: 3s;}
+
+/* Estilos para as seções */
+section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #524747;
+    color: #fff;
+}
+
+/* Estilos para os slides */
+.slideshow-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    border-radius: 4%;
+    width: 100%;
+}
+
+/* Estilos para animação dos slides */
+.fade {
+    animation: fade 3s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+        z-index: -1;
+    }
+    20%, 80% {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.welcome-section {
+    background-image: url('background-image.jpg'); /* Substitua pelo URL da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.welcome-content {
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.welcome-content h2 {
+    font-family: 'GFS Neohellenic', sans-serif;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-content p {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #535353;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68300;
+}
+/* Estilos para a seção sobre os deuses */
+.gods-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.gods-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.god-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.god-card img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.god-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.god-card p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#logo{
+    margin: 2%;
+    align-content: center;
+    width: 76px;
+}
+
+#separador{
+    width: 100%;
+    border-radius: 55px;
+    opacity: calc(87%);
+}
+
+/* Estilos para as hero-cards */
+.hero-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hero-card img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.hero-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.hero-card p {
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* Estilos para as monster-cards */
+.monster-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.monster-card img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.monster-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.monster-card p {
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Estilos para as story-cards */
+.story-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.story-card img {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.story-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.story-card p {
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
